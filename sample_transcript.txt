@@ -1,0 +1,14 @@
+Product sync — July 17
+
+Priya: Quick recap. Beta feedback is in. Biggest complaint is onboarding — 40% drop-off on the second screen.
+Daniel: I looked at the funnel. The permissions request is too early. I can move it to after first value moment. Should take me till Wednesday next week.
+Priya: Okay, decided — we move permissions to post-onboarding. Daniel owns that, due Wednesday the 22nd.
+Sara: Also the pricing page copy is still placeholder. Marketing keeps asking.
+Priya: Sara, can you get final copy to them by Friday?
+Sara: Yes, Friday works.
+Daniel: One more thing — staging has been flaky, deploys failing randomly. Not sure if it's the runner or the Docker cache.
+Priya: That's urgent, it's blocking QA. Daniel, can you investigate today, high priority?
+Daniel: On it.
+Sara: Do we know yet if we're supporting Android tablets at launch? Design needs an answer.
+Priya: Honestly, no decision yet. Let's park it — I'll raise it with Marcus.
+Priya: Last thing: the investor update. I'll draft it, but I need the beta metrics summary from Daniel first. No hard deadline, sometime next week.

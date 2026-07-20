@@ -10,8 +10,9 @@ __pycache__/
 # Virtual environment
 .venv/
 
-# Claude Code local settings
-.claude/settings.local.json
+# Editor / tool configs (local dev only)
+.claude/
+.vscode/
 
 # OS
 .DS_Store

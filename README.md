@@ -1,18 +1,17 @@
 # ScrumAgent — an AI assistant for Scrum Masters
 
-Four screens, one app (Apple-style **dark** dashboard — top nav bar, colored
-transcript summary, priority-pill ticket table, side-by-side summary + email):
+A four-screen Streamlit app with a clean dark UI — top nav bar, priority-pill
+ticket table, side-by-side summary and email view:
 
 1. **Meeting agent** — paste a meeting transcript → an AI agent extracts
    every action item, **creates a ticket for each one** (Jira, or mock mode),
    **verifies its own output against the transcript**, and **drafts the
-   follow-up email**.
+   follow-up email**. When the transcript is ambiguous (unclear owner, vague
+   deadline), the agent **asks inline right after the run** — answer the
+   question(s) and **re-run**; your answers are treated as authoritative.
 2. **Sprint status** — reads the current sprint from your Jira board (or a
    demo sprint in mock mode) and writes a **sprint health report**: progress,
    overdue/stale items, workload balance, and recommended actions.
-   When the meeting is ambiguous (unclear owner, vague deadline), the agent
-   **asks inline right after the run** — answer the question(s) and **re-run**;
-   your answers are treated as authoritative.
 3. **Reports** — download the meeting and sprint reports from your latest runs
    as Markdown.
 4. **Settings** — connect your Claude API key, pick a model, and toggle
@@ -84,7 +83,7 @@ Set `MOCK_MODE=false` and `JIRA_BASE_URL`, `JIRA_EMAIL`, `JIRA_API_TOKEN`,
 Sprint status additionally requires the project to have a Scrum board with an
 active sprint (`sprint in openSprints()` is used to find it).
 
-## Honest limitations (what "production" would still need at scale)
+## Known limitations (what "production" would still need at scale)
 
 - No auth/multi-tenancy — anyone with the URL can use your API key. Put it
   behind a login before hosting publicly.
